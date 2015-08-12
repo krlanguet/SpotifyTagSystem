@@ -30,12 +30,6 @@ def TagConverter():
             break
 
         current_tag_txt = open(current_tag)
-        print(current_tag_txt)
-        if current_tag_txt.read() == '':
-            print('It appears that the tag.txt file specified was empty.\n')
-            continue
-        
-        print(current_tag_txt.read())
         
         tag_list[current_tag] = []
         next_line = current_tag_txt.readline()
